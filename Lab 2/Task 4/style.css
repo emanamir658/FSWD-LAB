@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10pt;
+  line-height: 1.15;
+  color: #000;
+  background: #ccc;
+}
+
+.page {
+  max-width: 850px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 60px 55px;
+}
+
+/* ---- Title Block ---- */
+.title {
+  text-align: center;
+  font-size: 24pt;
+  margin-bottom: 12px;
+}
+
+.authors {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.author-block {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 10pt;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.author-block .name {
+  font-weight: bold;
+}
+
+/* ---- Abstract & Keywords ---- */
+.abstract {
+  margin-bottom: 10px;
+}
+
+.abstract p, .keywords p {
+  text-align: justify;
+}
+
+.abstract b, .keywords b {
+  font-weight: bold;
+}
+
+/* ---- Two Column Layout ---- */
+.content {
+  column-count: 2;
+  column-gap: 25px;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+/* ---- Section Headings ---- */
+h2 {
+  font-size: 10pt;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 14px 0 6px 0;
+  break-after: avoid;
+}
+
+h3 {
+  font-size: 10pt;
+  font-weight: bold;
+  margin: 10px 0 4px 0;
+  break-after: avoid;
+}
+
+p {
+  margin-bottom: 8px;
+  text-indent: 15px;
+}
+
+/* ---- Figures ---- */
+.figure {
+  break-inside: avoid;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 9pt;
+}
+
+.figure img {
+  max-width: 100%;
+  border: 1px solid #999;
+}
+
+.figure .caption {
+  margin-top: 5px;
+  text-align: left;
+  text-indent: 0;
+}
+
+/* ---- Tables ---- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9pt;
+  margin: 10px 0;
+  break-inside: avoid;
+}
+
+caption {
+  font-size: 9pt;
+  margin-bottom: 5px;
+  caption-side: top;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 4px 6px;
+  text-align: center;
+}
+
+/* ---- References ---- */
+.references {
+  font-size: 9pt;
+}
+
+.references p {
+  text-indent: -12px;
+  padding-left: 12px;
+  margin-bottom: 4px;
+}
+
+/* ---- Print ---- */
+@media print {
+  body { background: #fff; }
+  .page { box-shadow: none; margin: 0; padding: 20px; }
+}
