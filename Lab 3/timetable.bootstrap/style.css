@@ -1,0 +1,76 @@
+body {
+    background: #252525;
+    font-family: Arial, sans-serif;
+}
+
+.timetable-box {
+    max-width: 1500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #00000040;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.timetable {
+    min-width: 1050px;
+    font-size: 11px;
+    border-color: #333;
+}
+
+.timetable th {
+    background: #e9eef5;
+    font-size: 12px;
+}
+
+.timetable td,
+.timetable th {
+    padding: 12px 6px;
+}
+
+.timetable td {
+    min-width: 95px;
+    height: 90px;
+}
+
+.timetable td b {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #153d70;
+}
+
+.timetable .lab {
+    background: #e0f2e9;
+}
+
+.timetable tbody tr:hover td,
+.timetable tbody tr:hover th {
+    background-color: #f2f7ff;
+}
+
+.timetable tbody tr:hover .lab {
+    background-color: #d0ecdc;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .timetable-box {
+        padding: 12px !important;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+    }
+
+    .timetable-box {
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,263 @@
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.green-text {
+    color: #00e5a0;
+}
+
+.header h1 {
+    font-size: 30px;
+}
+
+.heart-icon {
+    color: #ff416c;
+    font-size: 45px;
+    text-shadow: 0 0 25px #ff416c;
+}
+
+
+/* Main Banner */
+
+.main-card {
+    background: linear-gradient(120deg, #073c32, #101b19);
+    border: 1px solid #126b59;
+    border-radius: 25px;
+}
+
+.main-card h2 {
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+
+/* Health Circle */
+
+.health-circle {
+    width: 125px;
+    height: 125px;
+    border: 8px solid #00e5a0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 25px #00e5a044;
+}
+
+.health-circle h2 {
+    margin: 0;
+}
+
+.health-circle small {
+    color: #aaa;
+}
+
+
+/* Health Cards */
+
+.health-card {
+    position: relative;
+    overflow: hidden;
+    padding: 25px;
+    min-height: 245px;
+    border: 1px solid #292929;
+    border-radius: 22px;
+    transition: 0.3s;
+}
+
+.health-card:hover {
+    transform: translateY(-8px);
+    border-color: #00e5a0;
+    box-shadow: 0 12px 30px #00e5a022;
+}
+
+.card-icon {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    color: #aaa;
+    font-size: 22px;
+}
+
+.label {
+    color: #b5b5b5;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.health-card h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.health-card .text-secondary {
+    color: #aaa !important;
+    font-size: 14px;
+}
+
+
+/* Different Card Colors */
+
+.green-card {
+    background: linear-gradient(145deg, #063b30, #091815);
+}
+
+.purple-card {
+    background: linear-gradient(145deg, #30205c, #130d26);
+}
+
+.blue-card {
+    background: linear-gradient(145deg, #102e58, #081525);
+}
+
+.red-card {
+    background: linear-gradient(145deg, #521d2c, #210d13);
+}
+
+.cyan-card {
+    background: linear-gradient(145deg, #073d4b, #071b20);
+}
+
+.orange-card {
+    background: linear-gradient(145deg, #52351b, #211509);
+}
+
+
+/* Progress Bars */
+
+.progress {
+    height: 7px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    border-radius: 10px;
+}
+
+.stress-bar {
+    background-color: #ff9d3c;
+}
+
+
+/* Weight Circle */
+
+.weight-circle {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    width: 55px;
+    height: 55px;
+    border: 5px solid #a778ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Sleep Design */
+
+.sleep-line {
+    display: flex;
+    gap: 7px;
+    margin-top: 25px;
+}
+
+.sleep-line span {
+    flex: 1;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #a778ff;
+}
+
+
+/* Heartbeat */
+
+.heartbeat {
+    margin-top: 20px;
+    font-size: 23px;
+    color: #ff416c;
+    text-shadow: 0 0 12px #ff416c;
+}
+
+
+/* Oxygen Circle */
+
+.oxygen-circle {
+    width: 65px;
+    height: 65px;
+    margin-top: 15px;
+    border: 5px solid #00d9ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px #00d9ff33;
+}
+
+
+/* Bottom Navigation */
+
+.bottom-nav {
+    background-color: #111;
+    border: 1px solid #292929;
+    border-radius: 22px;
+}
+
+.nav-item {
+    padding: 12px;
+    color: #888;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav-item span {
+    font-size: 24px;
+}
+
+.nav-item p {
+    margin: 5px 0 0;
+    font-size: 13px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background-color: #092c25;
+    color: #00e5a0;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 576px) {
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .main-card h2 {
+        font-size: 25px;
+    }
+
+    .health-card {
+        min-height: 220px;
+    }
+
+    .nav-item {
+        padding: 10px 2px;
+    }
+}

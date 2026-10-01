@@ -1,0 +1,86 @@
+body {
+    background: #fafafa;
+    color: #222;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar-brand {
+    color: #0066cc !important;
+}
+
+.nav-link:hover {
+    color: #0066cc;
+}
+
+#hero {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+}
+
+.tagline {
+    color: #0066cc;
+    font-size: 20px;
+}
+
+#hero p {
+    max-width: 650px;
+}
+
+.section-space {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.section-title {
+    display: inline-block;
+    color: #222;
+    border-bottom: 3px solid #0066cc;
+    padding-bottom: 6px;
+    margin-bottom: 25px;
+}
+
+.project-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px #00000015;
+}
+
+.project-card a,
+#contact a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.project-card a:hover,
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.skill {
+    background: #e8f1ff;
+    color: #0066cc;
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+footer {
+    background: white;
+    border-top: 1px solid #ddd;
+    color: #777;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 576px) {
+    #hero h1 {
+        font-size: 35px;
+    }
+}

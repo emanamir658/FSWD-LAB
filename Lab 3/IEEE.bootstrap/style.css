@@ -1,0 +1,53 @@
+body {
+    background: #ddd;
+    font-family: "Times New Roman", serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: black;
+}
+
+.paper {
+    max-width: 1000px;
+    background: white;
+    box-shadow: 0 3px 15px #999;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+}
+
+.figure {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.figure img {
+    border: 1px solid #999;
+}
+
+@media print {
+    body {
+        background: white;
+    }
+
+    .paper {
+        box-shadow: none;
+        margin: 0 !important;
+    }
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Health</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container py-4">
+
+        <!-- Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <p class="green-text small mb-2">HEALTH DASHBOARD</p>
+                <h1>Welcome <span class="green-text">EMAN AMIR</span> 👋</h1>
+                <p class="text-secondary">Your health at a glance</p>
+            </div>
+
+            <div class="heart-icon">♥</div>
+        </div>
+
+
+        <!-- Main Banner -->
+        <div class="main-card p-4 p-md-5 mb-5">
+            <div class="row align-items-center">
+
+                <div class="col-md-8">
+                    <p class="green-text">MY HEALTH</p>
+                    <h2>You're doing great!</h2>
+                    <p class="text-light">
+                        Keep moving, stay hydrated and take care of yourself.
+                    </p>
+                </div>
+
+                <div class="col-md-4 text-center mt-4 mt-md-0">
+                    <div class="health-circle mx-auto">
+                        <h2>82%</h2>
+                        <small>Daily Goal</small>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Health Heading -->
+        <h3 class="mb-4">Today's Health</h3>
+
+
+        <!-- First Row -->
+        <div class="row g-4 mb-4">
+
+            <!-- Steps -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="health-card green-card h-100">
+                    <div class="d-flex justify-content-between">
+                        <span class="card-icon">👟</span>
+                        <span class="arrow">↗</span>
+                    </div>
+
+                    <p class="label">STEPS</p>
+                    <h2>11,000</h2>
+                    <p class="text-secondary">Daily steps</p>
+
+                    <div class="progress mt-4">
+                        <div class="progress-bar bg-success"
+                             style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Weight -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="health-card purple-card h-100">
+                    <div class="d-flex justify-content-between">
+                        <span class="card-icon">⚖️</span>
+                        <span class="arrow">↗</span>
+                    </div>
+
+                    <p class="label">WEIGHT</p>
+                    <h2>55 kg</h2>
+                    <p class="text-secondary">Current weight</p>
+
+                    <div class="weight-circle">55</div>
+                </div>
+            </div>
+
+
+            <!-- Sleep -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="health-card blue-card h-100">
+                    <div class="d-flex justify-content-between">
+                        <span class="card-icon">🌙</span>
+                        <span class="arrow">↗</span>
+                    </div>
+
+                    <p class="label">SLEEP</p>
+                    <h2>7 Hours</h2>
+                    <p class="text-secondary">Last night</p>
+
+                    <div class="sleep-line">
+                        <span></span><span></span><span></span>
+                        <span></span><span></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Second Row -->
+        <div class="row g-4">
+
+            <!-- Heart Rate -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="health-card red-card h-100">
+                    <div class="d-flex justify-content-between">
+                        <span class="card-icon">❤️</span>
+                        <span class="arrow">↗</span>
+                    </div>
+
+                    <p class="label">HEART RATE</p>
+                    <h2>72 BPM</h2>
+                    <p class="text-secondary">Resting heart rate</p>
+
+                    <div class="heartbeat">〰️〰️〰️〰️</div>
+                </div>
+            </div>
+
+
+            <!-- Blood Oxygen -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="health-card cyan-card h-100">
+                    <div class="d-flex justify-content-between">
+                        <span class="card-icon">💧</span>
+                        <span class="arrow">↗</span>
+                    </div>
+
+                    <p class="label">BLOOD OXYGEN</p>
+                    <h2>98%</h2>
+                    <p class="text-secondary">Oxygen saturation</p>
+
+                    <div class="oxygen-circle">98%</div>
+                </div>
+            </div>
+
+
+            <!-- Stress -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="health-card orange-card h-100">
+                    <div class="d-flex justify-content-between">
+                        <span class="card-icon">🧠</span>
+                        <span class="arrow">↗</span>
+                    </div>
+
+                    <p class="label">STRESS MONITORING</p>
+                    <h2>Low</h2>
+                    <p class="text-secondary">24% estimated stress</p>
+
+                    <div class="progress mt-4">
+                        <div class="progress-bar stress-bar"
+                             style="width: 24%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav mt-5 p-3">
+            <div class="row text-center">
+
+                <div class="col nav-item">
+                    <span>👤</span>
+                    <p>Me</p>
+                </div>
+
+                <div class="col nav-item">
+                    <span>⌚</span>
+                    <p>Devices</p>
+                </div>
+
+                <div class="col nav-item">
+                    <span>🏃</span>
+                    <p>Sport</p>
+                </div>
+
+                <div class="col nav-item active">
+                    <span>♥</span>
+                    <p>Health</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

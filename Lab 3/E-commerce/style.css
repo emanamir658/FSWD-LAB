@@ -1,0 +1,147 @@
+body {
+    background: #10141c;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.navbar-brand span {
+    color: #00d9ff;
+}
+
+.nav-link:hover {
+    color: #00d9ff !important;
+}
+
+.hero {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #172b4d, #10141c, #123c50);
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 55px);
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #00d9ff;
+}
+
+.hero p {
+    color: #c3cbd8;
+}
+
+.btn-info {
+    background: #00d9ff;
+    border-color: #00d9ff;
+    color: #10141c;
+    font-weight: bold;
+}
+
+.btn-info:hover {
+    background: #00aeca;
+    border-color: #00aeca;
+}
+
+.section-title {
+    margin-bottom: 25px;
+    font-weight: bold;
+    border-left: 4px solid #00d9ff;
+    padding-left: 12px;
+}
+
+.product-card {
+    background: #1b2230;
+    color: white;
+    border: 1px solid #30394a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #00d9ff20;
+}
+
+.product-card img {
+    height: 190px;
+    object-fit: cover;
+}
+
+.price {
+    color: #00d9ff;
+    font-weight: bold;
+}
+
+#reviews {
+    background: #171d28;
+}
+
+.review-card,
+.form-card,
+.cart-box {
+    background: #1b2230;
+    border: 1px solid #30394a;
+    border-radius: 15px;
+    padding: 25px;
+    height: 100%;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 20px;
+}
+
+.form-control,
+.form-select {
+    background: #10141c;
+    color: white;
+    border: 1px solid #394355;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background: #10141c;
+    color: white;
+    border-color: #00d9ff;
+    box-shadow: 0 0 0 0.2rem #00d9ff25;
+}
+
+.form-control::placeholder {
+    color: #929baa;
+}
+
+.form-select option {
+    background: #10141c;
+    color: white;
+}
+
+footer {
+    margin-top: 30px;
+    background: #080b10;
+    color: #929baa;
+}
+
+footer h5 {
+    color: #00d9ff;
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 70px 15px;
+    }
+
+    .navbar-nav {
+        font-size: 13px;
+    }
+}
